@@ -1,0 +1,40 @@
+{
+	"testData":[{
+			"BasicAuth": {
+				"authId": "MAODUZYTQ0Y2FMYJBLOW",
+				"authToken": "Mzk0MzU1Mzc3MTc1MTEyMGU2M2RlYTIwN2UyMzk1"
+			}
+	}],
+	"testCase": [
+		{
+			"ListAllRentedNumbers": {
+				"type": "",
+				"number_startswith": "",
+				"subaccount": "",
+				"alias": "",
+				"services": "sms",
+				"limit": "",
+				"offset": ""
+			}
+		},
+		{
+			"GetSrcAndDst": {
+			}
+		},
+		{
+			"GetCashCredit": {
+			}
+		},
+		{
+			"SendAMessage": {
+				"src": "",
+				"dst": "",
+				"text": "sms demo text"
+			}
+		},
+		{
+			"ValidateSendAMessage": {
+			}
+		}
+	]
+}
