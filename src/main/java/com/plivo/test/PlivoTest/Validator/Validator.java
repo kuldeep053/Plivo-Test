@@ -1,6 +1,10 @@
 package com.plivo.test.PlivoTest.Validator;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import org.json.JSONObject;
 import org.testng.Reporter;
@@ -62,7 +66,12 @@ public class Validator {
 		DefaultResponse response = plivoClient.getAccountDetails(basicAuth);
 		double finalCashCredit = new JSONObject(response.responseBody).getDouble("cash_credits");
 		double amountDeductedFromAccountDetails = initialAmount - finalCashCredit;
-		assertEquals(amountDeductedFromMessageDetails, amountDeductedFromAccountDetails);
+		//compare double by rounding off to 5 decimal values
+		BigDecimal value1 = new BigDecimal(amountDeductedFromMessageDetails);
+		BigDecimal value2 = new BigDecimal(amountDeductedFromAccountDetails);
+		value1 = value1.setScale(5, RoundingMode.HALF_DOWN);
+		value2 = value2.setScale(5, RoundingMode.HALF_DOWN);
+		assertTrue(value1.equals(value2));
 	}
 
 }
