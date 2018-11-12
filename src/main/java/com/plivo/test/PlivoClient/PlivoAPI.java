@@ -6,8 +6,8 @@ import org.json.JSONObject;
 import com.plivo.test.PlivoClient.DefaultHttpClient.HttpMethod;
 
 public class PlivoAPI {
-	public DefaultHttpClient client;
-	public static final String baseUrl = "https://api.plivo.com/v1";
+	private DefaultHttpClient client;
+	private static final String baseUrl = "https://api.plivo.com/v1";
 	
 	public PlivoAPI() {
 		client = new DefaultHttpClient();

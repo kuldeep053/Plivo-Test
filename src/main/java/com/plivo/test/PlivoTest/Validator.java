@@ -10,7 +10,7 @@ import com.plivo.test.PlivoClient.DefaultResponse;
 import com.plivo.test.PlivoClient.PlivoAPI;
 
 public class Validator {
-	PlivoAPI plivoClient;
+	private PlivoAPI plivoClient;
 	public Validator() {
 		plivoClient = new PlivoAPI();
 	}

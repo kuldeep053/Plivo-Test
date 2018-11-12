@@ -106,6 +106,7 @@ public class PlivoTest extends PlivoBaseTest{
 		    		Reporter.log("Get cash credit by calling get account details API", true);
 		    		response = plivoClient.getAccountDetails(basicAuthJson);
 		    		cashCredit = new JSONObject(response.responseBody).getDouble("cash_credits");
+		    		break;
 		    	default:
 			    	throw new Exception("Invalid task");
 		    	}
