@@ -1,4 +1,4 @@
-package com.plivo.test.PlivoClient;
+package com.plivo.test.HttpClient;
 
 public class DefaultResponse {
 	public int responseCode;

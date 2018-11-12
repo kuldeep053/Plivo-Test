@@ -1,4 +1,4 @@
-package com.plivo.test.PlivoTest;
+package com.plivo.test.PlivoTest.Validator;
 
 import static org.testng.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import org.json.JSONObject;
 import org.testng.Reporter;
 
 import static com.plivo.test.Constants.Constants.*;
-import com.plivo.test.PlivoClient.DefaultResponse;
+import com.plivo.test.HttpClient.DefaultResponse;
 import com.plivo.test.PlivoClient.PlivoAPI;
 
 public class Validator {

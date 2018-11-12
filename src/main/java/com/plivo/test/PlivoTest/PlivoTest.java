@@ -7,8 +7,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.plivo.test.PlivoClient.DefaultResponse;
-import com.plivo.test.PlivoTest.RequestData;
+import com.plivo.test.HttpClient.DefaultResponse;
+import com.plivo.test.PlivoTest.RequestData.RequestData;
+import com.plivo.test.PlivoTest.BaseTest.PlivoBaseTest;
 
 public class PlivoTest extends PlivoBaseTest{
 	JSONObject requestJson;

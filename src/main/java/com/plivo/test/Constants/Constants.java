@@ -10,4 +10,7 @@ public final class Constants {
 	public static final int HttpResponseCodeUnautorized = 401;
 	public static final int HttpResponseCodeNotFound = 404;
 	public static final int HttpResponseCodeInternalError = 500;
+	public static enum HttpMethod {
+		GET, POST, PUT, DELETE;
+	}
 }

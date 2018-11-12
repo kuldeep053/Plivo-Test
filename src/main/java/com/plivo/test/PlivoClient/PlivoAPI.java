@@ -3,7 +3,9 @@ package com.plivo.test.PlivoClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.plivo.test.PlivoClient.DefaultHttpClient.HttpMethod;
+import com.plivo.test.HttpClient.DefaultHttpClient;
+import com.plivo.test.HttpClient.DefaultResponse;
+import com.plivo.test.Constants.Constants.HttpMethod;
 
 public class PlivoAPI {
 	private DefaultHttpClient client;

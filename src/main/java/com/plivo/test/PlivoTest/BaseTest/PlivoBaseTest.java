@@ -1,4 +1,4 @@
-package com.plivo.test.PlivoTest;
+package com.plivo.test.PlivoTest.BaseTest;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,8 +7,9 @@ import java.io.FileReader;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.plivo.test.PlivoClient.DefaultResponse;
+import com.plivo.test.HttpClient.DefaultResponse;
 import com.plivo.test.PlivoClient.PlivoAPI;
+import com.plivo.test.PlivoTest.Validator.Validator;
 
 public class PlivoBaseTest {
 	protected static PlivoAPI plivoClient = new PlivoAPI();

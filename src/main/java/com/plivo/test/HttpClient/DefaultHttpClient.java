@@ -1,4 +1,4 @@
-package com.plivo.test.PlivoClient;
+package com.plivo.test.HttpClient;
 
 import okhttp3.Credentials;
 import okhttp3.HttpUrl;
@@ -9,6 +9,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import java.util.HashMap;
 import java.util.Iterator;
+import com.plivo.test.Constants.Constants.HttpMethod;
 
 import org.testng.Reporter;
 
@@ -20,9 +21,7 @@ public class DefaultHttpClient {
 	private Request request;
 	private Response response;
 	public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-	enum HttpMethod {
-		GET, POST, PUT, DELETE;
-	}
+	
 	public DefaultHttpClient() {
 		client = new OkHttpClient();
 	}
